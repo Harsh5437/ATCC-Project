@@ -1,0 +1,42 @@
+{
+  "report_metadata": {
+    "job_id": "464517a0-9301-49c0-a90b-e35a32a252a6",
+    "generated_at": "2026-05-15T23:01:10.748204",
+    "video_source": "/Users/harsh/ATCC_Project/ai_worker/uploads/464517a0-9301-49c0-a90b-e35a32a252a6.mp4",
+    "report_type": "IRC Classified Volume Report",
+    "version": "1.0.0"
+  },
+  "video_info": {
+    "resolution": "1920x1080",
+    "fps": 50.0,
+    "total_frames": 320,
+    "duration_seconds": 6.4
+  },
+  "summary": {
+    "total_classified_vehicles": 0,
+    "peak_hour": null,
+    "peak_hour_volume": 0,
+    "heavy_vehicle_percentage": 0.0,
+    "entry_y": 486.0,
+    "exit_y": 702.0
+  },
+  "vehicle_class_distribution": {
+    "Car": {
+      "count": 0,
+      "percentage": 0.0
+    },
+    "Motorcycle": {
+      "count": 0,
+      "percentage": 0.0
+    },
+    "Bus": {
+      "count": 0,
+      "percentage": 0.0
+    },
+    "Truck": {
+      "count": 0,
+      "percentage": 0.0
+    }
+  },
+  "hourly_counts": {}
+}

@@ -1,0 +1,28 @@
+{
+  "cdaa493f-f594-46f7-a2df-ba16f07c33dc": {
+    "job_id": "cdaa493f-f594-46f7-a2df-ba16f07c33dc",
+    "video_path": "/Users/harsh/ATCC_Project/ai_worker/uploads/cdaa493f-f594-46f7-a2df-ba16f07c33dc.mp4",
+    "status": "Completed",
+    "progress": 100,
+    "logs": "23:11:34 | STATUS \u2014 Initializing\n23:11:34 | STATUS \u2014 Analyzing Frames\n23:12:41 | STATUS \u2014 Completed\n23:12:41 | FINISH \u2014 Processed in 66.1s",
+    "error": null,
+    "traceback": null,
+    "started_at": "2026-05-15T23:11:34.684515",
+    "completed_at": "2026-05-15T23:12:41.088377",
+    "debug_video_path": "/Users/harsh/ATCC_Project/ai_worker/outputs/debug/debug_cdaa493f-f594-46f7-a2df-ba16f07c33dc.mp4",
+    "worker_node": "Stable-Node-Persistent"
+  },
+  "521f0ca0-6d44-4c16-8240-75238935049f": {
+    "job_id": "521f0ca0-6d44-4c16-8240-75238935049f",
+    "video_path": "/Users/harsh/ATCC_Project/ai_worker/uploads/521f0ca0-6d44-4c16-8240-75238935049f.mp4",
+    "status": "Completed",
+    "progress": 100,
+    "logs": "23:14:49 | STATUS \u2014 Initializing\n23:14:50 | STATUS \u2014 Analyzing Frames\n23:15:55 | STATUS \u2014 Completed\n23:15:55 | FINISH \u2014 Processed in 65.1s",
+    "error": null,
+    "traceback": null,
+    "started_at": "2026-05-15T23:14:49.923174",
+    "completed_at": "2026-05-15T23:15:55.259681",
+    "debug_video_path": "/Users/harsh/ATCC_Project/ai_worker/outputs/debug/debug_521f0ca0-6d44-4c16-8240-75238935049f.mp4",
+    "worker_node": "Stable-Node-Persistent"
+  }
+}

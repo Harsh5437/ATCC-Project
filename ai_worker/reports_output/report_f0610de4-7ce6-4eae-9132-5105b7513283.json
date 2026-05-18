@@ -1,0 +1,56 @@
+{
+  "report_metadata": {
+    "job_id": "f0610de4-7ce6-4eae-9132-5105b7513283",
+    "generated_at": "2026-05-15T23:41:19.465981",
+    "video_source": "/Users/harsh/ATCC_Project/ai_worker/uploads/f0610de4-7ce6-4eae-9132-5105b7513283.mp4",
+    "report_type": "IRC Classified Volume Report",
+    "version": "1.0.0"
+  },
+  "video_info": {
+    "resolution": "1920x1080",
+    "fps": 50.0,
+    "total_frames": 320,
+    "duration_seconds": 6.4
+  },
+  "summary": {
+    "total_classified_vehicles": 12,
+    "peak_hour": "00:00",
+    "peak_hour_volume": 12,
+    "heavy_vehicle_percentage": 16.67,
+    "counting_line_y": null
+  },
+  "vehicle_class_distribution": {
+    "Bike": {
+      "count": 5,
+      "percentage": 41.67
+    },
+    "Car": {
+      "count": 5,
+      "percentage": 41.67
+    },
+    "Bus": {
+      "count": 1,
+      "percentage": 8.33
+    },
+    "Truck": {
+      "count": 1,
+      "percentage": 8.33
+    },
+    "Auto/E-rickshaw": {
+      "count": 0,
+      "percentage": 0.0
+    },
+    "LCV": {
+      "count": 0,
+      "percentage": 0.0
+    }
+  },
+  "hourly_counts": {
+    "00:00": {
+      "Bus": 1,
+      "Car": 5,
+      "Truck": 1,
+      "Bike": 5
+    }
+  }
+}

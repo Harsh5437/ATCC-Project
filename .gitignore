@@ -39,3 +39,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# python / AI worker files
+ai_worker/venv/
+ai_worker/uploads/
+ai_worker/outputs/
+ai_worker/*.pt
+ai_worker/**/*.pt
+__pycache__/
+*.pyc
+
