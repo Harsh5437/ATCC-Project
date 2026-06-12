@@ -14,7 +14,7 @@ from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 import aiofiles
-from fastapi import APIRouter, File, HTTPException, UploadFile
+from fastapi import APIRouter, File, HTTPException, UploadFile, Form
 from fastapi.responses import FileResponse, JSONResponse
 
 from core.config import settings
@@ -34,7 +34,11 @@ _executor = ThreadPoolExecutor(max_workers=settings.MAX_CONCURRENT_JOBS)
 
 # ── Upload & Process ─────────────────────────────────────────────
 @router.post("/process")
-async def upload_and_process(video: UploadFile = File(...)):
+async def upload_and_process(
+    video: UploadFile = File(...),
+    band_top: float | None = Form(None),
+    band_bottom: float | None = Form(None),
+):
     """
     Accept a video file upload and start async processing.
 
@@ -60,7 +64,7 @@ async def upload_and_process(video: UploadFile = File(...)):
     logger.info("Video saved: %s (%s)", save_path, video.content_type)
 
     # Dispatch processing to background thread
-    _executor.submit(process_video, str(save_path), job_id)
+    _executor.submit(process_video, str(save_path), job_id, band_top, band_bottom)
 
     return JSONResponse(
         status_code=202,

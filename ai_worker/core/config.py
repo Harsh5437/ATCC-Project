@@ -34,7 +34,7 @@ class Settings(BaseSettings):
     MODEL_WEIGHTS: str = "yolov8s.pt"   
     IMAGE_SIZE: int = 960              
     PROCESS_EVERY_N_FRAMES: int = 4    
-    DEBUG_MODE: bool = False           
+    DEBUG_MODE: bool = True           
 
     @property
     def BATCH_SIZE(self) -> int:

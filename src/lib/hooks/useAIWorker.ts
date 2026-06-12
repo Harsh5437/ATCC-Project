@@ -28,7 +28,7 @@ export function useUploadToWorker() {
   const queryClient = useQueryClient();
 
   return useMutation({
-    mutationFn: async (file: File) => {
+    mutationFn: async ({ file, bandTop, bandBottom }: { file: File; bandTop?: number; bandBottom?: number }) => {
       const uploadId = Math.random().toString(36).substring(7);
 
       // Register ephemeral upload in store
@@ -42,9 +42,14 @@ export function useUploadToWorker() {
       });
 
       try {
-        const result = await uploadVideoForProcessing(file, (progress) => {
-          updateUpload(uploadId, { progress });
-        });
+        const result = await uploadVideoForProcessing(
+          file,
+          (progress) => {
+            updateUpload(uploadId, { progress });
+          },
+          bandTop,
+          bandBottom
+        );
 
         // Upload complete → transition to "submitted"
         updateUpload(uploadId, {

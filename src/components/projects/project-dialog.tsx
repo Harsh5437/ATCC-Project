@@ -15,6 +15,7 @@ import { Input } from '@/components/ui/input';
 import { projectSchema, ProjectFormValues } from '@/lib/validations/project';
 import { useCreateProject, useUpdateProject } from '@/lib/hooks/useProjects';
 import { Database } from '@/lib/supabase/database.types';
+import { toast } from 'sonner';
 
 type Project = Database['public']['Tables']['projects']['Row'];
 
@@ -74,13 +75,16 @@ export function ProjectDialog({ project, open, onOpenChange }: ProjectDialogProp
     try {
       if (project) {
         await updateProject.mutateAsync({ id: project.id, project: values });
+        toast.success('Project updated successfully');
       } else {
         await createProject.mutateAsync(values);
+        toast.success('Project created successfully');
       }
       onOpenChange(false);
       reset();
-    } catch (error) {
+    } catch (error: any) {
       console.error('Failed to save project:', error);
+      toast.error(error.message || 'Failed to save project');
     }
   };
 

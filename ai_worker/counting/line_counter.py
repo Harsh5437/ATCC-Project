@@ -21,9 +21,16 @@ class LineCrossingCounter:
     Stable Entry-Band Counter for Highway Traffic.
     """
 
-    def __init__(self, frame_height: int) -> None:
-        self.band_top: float = frame_height * settings.ENTRY_BAND_TOP
-        self.band_bottom: float = frame_height * settings.ENTRY_BAND_BOTTOM
+    def __init__(
+        self,
+        frame_height: int,
+        band_top: float | None = None,
+        band_bottom: float | None = None,
+    ) -> None:
+        top_ratio = band_top if band_top is not None else settings.ENTRY_BAND_TOP
+        bottom_ratio = band_bottom if band_bottom is not None else settings.ENTRY_BAND_BOTTOM
+        self.band_top: float = frame_height * top_ratio
+        self.band_bottom: float = frame_height * bottom_ratio
         self.frame_height = frame_height
 
         self.counted_ids: set[int] = set()

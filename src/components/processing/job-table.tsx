@@ -34,7 +34,7 @@ import {
 import { Input } from '@/components/ui/input';
 import { useAIJobs, useAIJobStatus } from '@/lib/hooks/useAIWorker';
 import { useProcessingStore } from '@/lib/stores/processing-store';
-import { getReportDownloadUrl, getDebugVideoUrl, type ProcessingJob } from '@/lib/services/ai-worker-api';
+import { getReportDownloadUrl, getReportPdfUrl, getReportXlsxUrl, getDebugVideoUrl, type ProcessingJob } from '@/lib/services/ai-worker-api';
 import { format } from 'date-fns';
 
 export function JobTable() {
@@ -166,8 +166,8 @@ export function JobTable() {
                           <>
                             <Button 
                               variant="ghost" size="icon" className="h-8 w-8 hover:bg-emerald-500/10 hover:text-emerald-500"
-                              title="Download Report"
-                              onClick={() => window.open(getReportDownloadUrl(job.job_id), '_blank')}
+                              title="Download PDF Report"
+                              onClick={() => window.open(getReportPdfUrl(job.job_id), '_blank')}
                             >
                               <Download className="h-4 w-4" />
                             </Button>

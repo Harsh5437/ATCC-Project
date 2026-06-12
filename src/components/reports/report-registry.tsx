@@ -31,7 +31,7 @@ import {
 } from '@/components/ui/dropdown-menu';
 import { format } from 'date-fns';
 import { useAIJobs } from '@/lib/hooks/useAIWorker';
-import { getReportDownloadUrl, getDebugVideoUrl, type ProcessingJob } from '@/lib/services/ai-worker-api';
+import { getReportDownloadUrl, getReportPdfUrl, getReportXlsxUrl, getDebugVideoUrl, type ProcessingJob } from '@/lib/services/ai-worker-api';
 
 export function ReportRegistry() {
   const { data: jobs, isLoading } = useAIJobs();
@@ -115,8 +115,9 @@ export function ReportRegistry() {
                     <div className="flex items-center justify-end gap-2">
                       <Button 
                         variant="ghost" size="icon" 
-                        className="h-8 w-8 hover:bg-primary/10 hover:text-primary"
-                        onClick={() => window.open(getReportDownloadUrl(job.job_id), '_blank')}
+                        className="h-8 w-8 hover:bg-emerald-500/10 hover:text-emerald-500"
+                        title="Download PDF Report"
+                        onClick={() => window.open(getReportPdfUrl(job.job_id), '_blank')}
                       >
                         <Download className="h-4 w-4" />
                       </Button>
@@ -125,12 +126,18 @@ export function ReportRegistry() {
                           <MoreHorizontal className="h-4 w-4" />
                         </DropdownMenuTrigger>
                         <DropdownMenuContent align="end">
+                          <DropdownMenuItem onClick={() => window.open(getReportPdfUrl(job.job_id), '_blank')}>
+                            <FileText className="mr-2 h-4 w-4 text-rose-500" /> Download PDF Report
+                          </DropdownMenuItem>
+                          <DropdownMenuItem onClick={() => window.open(getReportXlsxUrl(job.job_id), '_blank')}>
+                            <FileSpreadsheet className="mr-2 h-4 w-4 text-emerald-500" /> Download Excel Report
+                          </DropdownMenuItem>
                           <DropdownMenuItem onClick={() => window.open(getReportDownloadUrl(job.job_id), '_blank')}>
-                            <Eye className="mr-2 h-4 w-4" /> Preview JSON
+                            <FileType className="mr-2 h-4 w-4 text-blue-500" /> Preview JSON Data
                           </DropdownMenuItem>
                           {job.debug_video_path && (
                             <DropdownMenuItem onClick={() => window.open(getDebugVideoUrl(job.job_id), '_blank')}>
-                              <Video className="mr-2 h-4 w-4" /> Debug Video
+                              <Video className="mr-2 h-4 w-4 text-indigo-500" /> Stream Debug Video
                             </DropdownMenuItem>
                           )}
                         </DropdownMenuContent>

@@ -1,6 +1,6 @@
 import * as z from 'zod';
 
-export const projectSchema = z.object({
+const projectSchema = z.object({
   name: z.string().min(1, 'Project name is required').max(100),
   location: z.string().min(1, 'Location is required').max(255),
   road_junction: z.string().min(1, 'Road/Junction name is required').max(255),
@@ -10,4 +10,17 @@ export const projectSchema = z.object({
   status: z.enum(['Draft', 'Uploading', 'Processing', 'Completed', 'Review Required']),
 });
 
-export type ProjectFormValues = z.infer<typeof projectSchema>;
+try {
+  projectSchema.parse({
+    name: 'test',
+    location: 'test',
+    road_junction: 'test',
+    survey_date: 'test',
+    direction: 'test',
+    notes: 'test',
+    status: 'Draft',
+  });
+  console.log('Success');
+} catch (e) {
+  console.log(e);
+}

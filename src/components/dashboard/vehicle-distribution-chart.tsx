@@ -10,12 +10,7 @@ import {
   Tooltip 
 } from 'recharts';
 
-const data = [
-  { name: 'Cars', value: 45 },
-  { name: 'Bikes', value: 30 },
-  { name: 'LCVs', value: 15 },
-  { name: 'Trucks/Buses', value: 10 },
-];
+const data: any[] = [];
 
 const COLORS = ['#3b82f6', '#10b981', '#f59e0b', '#ef4444'];
 
@@ -28,31 +23,37 @@ export function VehicleDistributionChart() {
       </CardHeader>
       <CardContent>
         <div className="h-[300px] w-full">
-          <ResponsiveContainer width="100%" height="100%">
-            <PieChart>
-              <Pie
-                data={data}
-                cx="50%"
-                cy="50%"
-                innerRadius={60}
-                outerRadius={80}
-                paddingAngle={5}
-                dataKey="value"
-              >
-                {data.map((entry, index) => (
-                  <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-                ))}
-              </Pie>
-              <Tooltip 
-                contentStyle={{ 
-                  backgroundColor: '#18181b', 
-                  borderColor: '#27272a',
-                  color: '#fafafa'
-                }}
-              />
-              <Legend verticalAlign="bottom" height={36}/>
-            </PieChart>
-          </ResponsiveContainer>
+          {data.length === 0 ? (
+            <div className="w-full h-full flex items-center justify-center text-muted-foreground">
+              No data available
+            </div>
+          ) : (
+            <ResponsiveContainer width="100%" height="100%">
+              <PieChart>
+                <Pie
+                  data={data}
+                  cx="50%"
+                  cy="50%"
+                  innerRadius={60}
+                  outerRadius={80}
+                  paddingAngle={5}
+                  dataKey="value"
+                >
+                  {data.map((entry, index) => (
+                    <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                  ))}
+                </Pie>
+                <Tooltip 
+                  contentStyle={{ 
+                    backgroundColor: '#18181b', 
+                    borderColor: '#27272a',
+                    color: '#fafafa'
+                  }}
+                />
+                <Legend verticalAlign="bottom" height={36}/>
+              </PieChart>
+            </ResponsiveContainer>
+          )}
         </div>
       </CardContent>
     </Card>

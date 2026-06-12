@@ -58,6 +58,8 @@ class JobState:
         self.debug_video_path: str | None = None
         self.thumbnail_path: str | None = None
         self.worker_node: str = "NODE-01"
+        self.band_top: float | None = None
+        self.band_bottom: float | None = None
 
     def log(self, message: str) -> None:
         ts = datetime.now().strftime("%H:%M:%S")
@@ -82,6 +84,8 @@ class JobState:
             "debug_video_path": self.debug_video_path,
             "thumbnail_path": self.thumbnail_path,
             "worker_node": self.worker_node,
+            "band_top": self.band_top,
+            "band_bottom": self.band_bottom,
         }
 
     @classmethod
@@ -99,6 +103,8 @@ class JobState:
         state.debug_video_path = data.get("debug_video_path")
         state.thumbnail_path = data.get("thumbnail_path")
         state.worker_node = data.get("worker_node", "NODE-01")
+        state.band_top = data.get("band_top")
+        state.band_bottom = data.get("band_bottom")
         return state
 
 
@@ -150,12 +156,19 @@ def list_jobs() -> list[dict]:
     return registry.list_all()
 
 
-def process_video(video_path: str, job_id: str | None = None) -> str:
+def process_video(
+    video_path: str,
+    job_id: str | None = None,
+    band_top: float | None = None,
+    band_bottom: float | None = None,
+) -> str:
     """
     Production-optimized video processing pipeline.
     """
     jid = job_id or str(uuid.uuid4())
     state = JobState(jid, video_path)
+    state.band_top = band_top
+    state.band_bottom = band_bottom
     state.started_at = datetime.now()
     registry.add(state)
 
@@ -178,7 +191,11 @@ def process_video(video_path: str, job_id: str | None = None) -> str:
         state.log(f"INFO  — Source: {width}x{height} @ {fps:.1f}fps")
 
         tracker = VehicleTracker()
-        counter = LineCrossingCounter(frame_height=height)
+        counter = LineCrossingCounter(
+            frame_height=height,
+            band_top=state.band_top,
+            band_bottom=state.band_bottom,
+        )
 
         if settings.DEBUG_MODE:
             debug_path = settings.DEBUG_OUTPUT_DIR / f"debug_{jid}.mp4"

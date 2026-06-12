@@ -50,9 +50,17 @@ export interface HealthResponse {
 export async function uploadVideoForProcessing(
   file: File,
   onProgress?: (progress: number) => void,
+  bandTop?: number,
+  bandBottom?: number,
 ): Promise<ProcessResponse> {
   const formData = new FormData();
   formData.append('video', file);
+  if (bandTop !== undefined) {
+    formData.append('band_top', bandTop.toString());
+  }
+  if (bandBottom !== undefined) {
+    formData.append('band_bottom', bandBottom.toString());
+  }
 
   const { data } = await api.post<ProcessResponse>('/process', formData, {
     headers: { 'Content-Type': 'multipart/form-data' },
@@ -82,6 +90,14 @@ export async function fetchJobStatus(jobId: string): Promise<ProcessingJob> {
 
 export function getReportDownloadUrl(jobId: string): string {
   return `${API_BASE}/api/v1/reports/${jobId}`;
+}
+
+export function getReportPdfUrl(jobId: string): string {
+  return `${API_BASE}/api/v1/reports/${jobId}/pdf`;
+}
+
+export function getReportXlsxUrl(jobId: string): string {
+  return `${API_BASE}/api/v1/reports/${jobId}/xlsx`;
 }
 
 export function getDebugVideoUrl(jobId: string): string {
