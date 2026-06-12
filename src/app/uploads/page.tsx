@@ -133,10 +133,10 @@ export default function UploadsPage() {
                   <div>
                     <CardTitle className="text-lg font-bold flex items-center gap-2 text-foreground">
                       <span className="flex h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
-                      Adjustable Counter Band
+                      Bi-Directional Counting Zone (Up/Down)
                     </CardTitle>
                     <CardDescription className="text-xs text-muted-foreground">
-                      Configure the horizontal region where vehicle entry crossing events are triggered.
+                      Configure the horizontal region for bi-directional (Up and Down) vehicle counting.
                     </CardDescription>
                   </div>
                   <Badge variant="outline" className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 border-emerald-500/30 text-emerald-400 bg-emerald-500/5">
@@ -166,6 +166,9 @@ export default function UploadsPage() {
                   <div className="absolute bottom-8 right-1/4 w-10 h-16 bg-amber-500/10 border border-amber-500/30 rounded-md flex items-center justify-center text-[8px] font-mono text-amber-400/80 select-none">
                     Truck
                   </div>
+                  <div className="absolute top-1/2 left-1/2 w-9 h-14 bg-purple-500/10 border border-purple-500/30 rounded-md flex items-center justify-center text-[8px] font-mono text-purple-400/80 select-none transform -translate-x-1/2 -translate-y-1/2">
+                    LCV
+                  </div>
 
                   {/* Custom Band Overlay */}
                   <div 
@@ -176,7 +179,7 @@ export default function UploadsPage() {
                     }}
                   >
                     <div className="px-2 py-0.5 rounded bg-emerald-500/90 text-[10px] font-extrabold text-slate-950 uppercase tracking-widest shadow-md">
-                      Counting Active Region ({Math.round(bandTop * 100)}% - {Math.round(bandBottom * 100)}%)
+                      Bi-Directional Tracking Active ({Math.round(bandTop * 100)}% - {Math.round(bandBottom * 100)}%)
                     </div>
                   </div>
 

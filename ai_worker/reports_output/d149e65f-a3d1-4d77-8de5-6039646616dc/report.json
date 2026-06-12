@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "job_id": "d149e65f-a3d1-4d77-8de5-6039646616dc",
+    "generated_at": "2026-06-12 15:57:31",
+    "video_source": "d149e65f-a3d1-4d77-8de5-6039646616dc.mp4",
+    "mode": "STANDARD"
+  },
+  "summary": {
+    "total_vehicles": 19,
+    "duration": "231.8s"
+  },
+  "distribution": [
+    {
+      "type": "Bike",
+      "count": 0,
+      "percentage": 0.0
+    },
+    {
+      "type": "Car",
+      "count": 14,
+      "percentage": 73.7
+    },
+    {
+      "type": "Bus",
+      "count": 4,
+      "percentage": 21.1
+    },
+    {
+      "type": "Truck",
+      "count": 1,
+      "percentage": 5.3
+    },
+    {
+      "type": "Auto/E-rickshaw",
+      "count": 0,
+      "percentage": 0.0
+    },
+    {
+      "type": "LCV",
+      "count": 0,
+      "percentage": 0.0
+    }
+  ],
+  "hourly": [
+    [
+      "00:00",
+      {
+        "Car": 14,
+        "Truck": 1,
+        "Bus": 4
+      }
+    ]
+  ]
+}

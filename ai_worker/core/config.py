@@ -31,10 +31,10 @@ class Settings(BaseSettings):
     REPORTS_DIR: Path = BASE_DIR / "reports_output"
     
     # ── Production Performance ────────────────────────────────────
-    MODEL_WEIGHTS: str = "yolov8s.pt"   
-    IMAGE_SIZE: int = 960              
-    PROCESS_EVERY_N_FRAMES: int = 4    
-    DEBUG_MODE: bool = True           
+    MODEL_WEIGHTS: str = "yolov8n.pt"   
+    IMAGE_SIZE: int = 640              
+    PROCESS_EVERY_N_FRAMES: int = 6    
+    DEBUG_MODE: bool = False           
 
     @property
     def BATCH_SIZE(self) -> int:

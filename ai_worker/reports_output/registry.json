@@ -13,7 +13,9 @@
     "xlsx_path": null,
     "debug_video_path": null,
     "thumbnail_path": null,
-    "worker_node": "NODE-01"
+    "worker_node": "NODE-01",
+    "band_top": null,
+    "band_bottom": null
   },
   "f0610de4-7ce6-4eae-9132-5105b7513283": {
     "job_id": "f0610de4-7ce6-4eae-9132-5105b7513283",
@@ -29,7 +31,9 @@
     "xlsx_path": null,
     "debug_video_path": null,
     "thumbnail_path": null,
-    "worker_node": "NODE-01"
+    "worker_node": "NODE-01",
+    "band_top": null,
+    "band_bottom": null
   },
   "47691d80-ba69-4368-b7ec-fc9949cbf633": {
     "job_id": "47691d80-ba69-4368-b7ec-fc9949cbf633",
@@ -45,7 +49,9 @@
     "xlsx_path": null,
     "debug_video_path": null,
     "thumbnail_path": null,
-    "worker_node": "NODE-01"
+    "worker_node": "NODE-01",
+    "band_top": null,
+    "band_bottom": null
   },
   "fe3822b3-c647-45eb-a2f5-c56a3ea1856c": {
     "job_id": "fe3822b3-c647-45eb-a2f5-c56a3ea1856c",
@@ -61,7 +67,9 @@
     "xlsx_path": null,
     "debug_video_path": null,
     "thumbnail_path": null,
-    "worker_node": "NODE-01"
+    "worker_node": "NODE-01",
+    "band_top": null,
+    "band_bottom": null
   },
   "83829292-07e3-4c58-8d0d-5986ed0b38ec": {
     "job_id": "83829292-07e3-4c58-8d0d-5986ed0b38ec",
@@ -77,7 +85,9 @@
     "xlsx_path": null,
     "debug_video_path": null,
     "thumbnail_path": null,
-    "worker_node": "NODE-01"
+    "worker_node": "NODE-01",
+    "band_top": null,
+    "band_bottom": null
   },
   "e1764a7e-db65-4a62-8360-bb334ae47c8d": {
     "job_id": "e1764a7e-db65-4a62-8360-bb334ae47c8d",
@@ -93,7 +103,9 @@
     "xlsx_path": null,
     "debug_video_path": null,
     "thumbnail_path": null,
-    "worker_node": "NODE-01"
+    "worker_node": "NODE-01",
+    "band_top": null,
+    "band_bottom": null
   },
   "f9d8609b-e307-4872-841f-354544af8c01": {
     "job_id": "f9d8609b-e307-4872-841f-354544af8c01",
@@ -109,7 +121,9 @@
     "xlsx_path": null,
     "debug_video_path": null,
     "thumbnail_path": null,
-    "worker_node": "NODE-01"
+    "worker_node": "NODE-01",
+    "band_top": null,
+    "band_bottom": null
   },
   "f6e29a8f-cad1-4cbd-8821-2efd298fd297": {
     "job_id": "f6e29a8f-cad1-4cbd-8821-2efd298fd297",
@@ -125,7 +139,9 @@
     "xlsx_path": null,
     "debug_video_path": null,
     "thumbnail_path": null,
-    "worker_node": "NODE-01"
+    "worker_node": "NODE-01",
+    "band_top": null,
+    "band_bottom": null
   },
   "54cc9032-b9d0-4776-ac9a-40768f7d7ce8": {
     "job_id": "54cc9032-b9d0-4776-ac9a-40768f7d7ce8",
@@ -141,7 +157,9 @@
     "xlsx_path": null,
     "debug_video_path": null,
     "thumbnail_path": null,
-    "worker_node": "NODE-01"
+    "worker_node": "NODE-01",
+    "band_top": null,
+    "band_bottom": null
   },
   "cfd616cf-dfd8-4930-81f7-6815a19ae655": {
     "job_id": "cfd616cf-dfd8-4930-81f7-6815a19ae655",
@@ -157,7 +175,9 @@
     "xlsx_path": null,
     "debug_video_path": null,
     "thumbnail_path": null,
-    "worker_node": "NODE-01"
+    "worker_node": "NODE-01",
+    "band_top": null,
+    "band_bottom": null
   },
   "c1343736-7d1f-48ae-aa7b-17df62b69a5f": {
     "job_id": "c1343736-7d1f-48ae-aa7b-17df62b69a5f",
@@ -178,7 +198,9 @@
     "xlsx_path": null,
     "debug_video_path": null,
     "thumbnail_path": null,
-    "worker_node": "NODE-01"
+    "worker_node": "NODE-01",
+    "band_top": null,
+    "band_bottom": null
   },
   "ded491a1-ed29-42a8-a694-9a2b5a2fa287": {
     "job_id": "ded491a1-ed29-42a8-a694-9a2b5a2fa287",
@@ -203,7 +225,9 @@
     "xlsx_path": "/Users/harsh/ATCC_Project/ai_worker/reports_output/ded491a1-ed29-42a8-a694-9a2b5a2fa287/report.xlsx",
     "debug_video_path": null,
     "thumbnail_path": null,
-    "worker_node": "NODE-01"
+    "worker_node": "NODE-01",
+    "band_top": null,
+    "band_bottom": null
   },
   "c9bd73a4-8067-4262-9deb-7f79964b0eee": {
     "job_id": "c9bd73a4-8067-4262-9deb-7f79964b0eee",
@@ -229,7 +253,9 @@
     "xlsx_path": "/Users/harsh/ATCC_Project/ai_worker/reports_output/c9bd73a4-8067-4262-9deb-7f79964b0eee/report.xlsx",
     "debug_video_path": null,
     "thumbnail_path": null,
-    "worker_node": "NODE-01"
+    "worker_node": "NODE-01",
+    "band_top": null,
+    "band_bottom": null
   },
   "b2056fb7-17ca-4da3-89f9-6666b4341599": {
     "job_id": "b2056fb7-17ca-4da3-89f9-6666b4341599",
@@ -255,7 +281,9 @@
     "xlsx_path": "/Users/harsh/ATCC_Project/ai_worker/reports_output/b2056fb7-17ca-4da3-89f9-6666b4341599/report.xlsx",
     "debug_video_path": "/Users/harsh/ATCC_Project/ai_worker/outputs/debug/debug_b2056fb7-17ca-4da3-89f9-6666b4341599.mp4",
     "thumbnail_path": "/Users/harsh/ATCC_Project/ai_worker/outputs/debug/debug_b2056fb7-17ca-4da3-89f9-6666b4341599.thumb.jpg",
-    "worker_node": "NODE-01"
+    "worker_node": "NODE-01",
+    "band_top": null,
+    "band_bottom": null
   },
   "7be91e13-f584-45c1-bdc2-0df6668b09c1": {
     "job_id": "7be91e13-f584-45c1-bdc2-0df6668b09c1",
@@ -280,7 +308,9 @@
     "xlsx_path": "/Users/harsh/ATCC_Project/ai_worker/reports_output/7be91e13-f584-45c1-bdc2-0df6668b09c1/report.xlsx",
     "debug_video_path": "/Users/harsh/ATCC_Project/ai_worker/outputs/debug/debug_7be91e13-f584-45c1-bdc2-0df6668b09c1.mp4",
     "thumbnail_path": "/Users/harsh/ATCC_Project/ai_worker/outputs/debug/debug_7be91e13-f584-45c1-bdc2-0df6668b09c1.thumb.jpg",
-    "worker_node": "NODE-01"
+    "worker_node": "NODE-01",
+    "band_top": null,
+    "band_bottom": null
   },
   "68aaa45d-3d3a-44c7-aa9c-a93a4eab1abf": {
     "job_id": "68aaa45d-3d3a-44c7-aa9c-a93a4eab1abf",
@@ -306,7 +336,9 @@
     "xlsx_path": "/Users/harsh/ATCC_Project/ai_worker/reports_output/68aaa45d-3d3a-44c7-aa9c-a93a4eab1abf/report.xlsx",
     "debug_video_path": "/Users/harsh/ATCC_Project/ai_worker/outputs/debug/debug_68aaa45d-3d3a-44c7-aa9c-a93a4eab1abf.mp4",
     "thumbnail_path": "/Users/harsh/ATCC_Project/ai_worker/outputs/debug/debug_68aaa45d-3d3a-44c7-aa9c-a93a4eab1abf.thumb.jpg",
-    "worker_node": "NODE-01"
+    "worker_node": "NODE-01",
+    "band_top": null,
+    "band_bottom": null
   },
   "71682680-21b6-4516-bc5e-e5129db83aaa": {
     "job_id": "71682680-21b6-4516-bc5e-e5129db83aaa",
@@ -331,7 +363,9 @@
     "xlsx_path": "/Users/harsh/ATCC_Project/ai_worker/reports_output/71682680-21b6-4516-bc5e-e5129db83aaa/report.xlsx",
     "debug_video_path": "/Users/harsh/ATCC_Project/ai_worker/outputs/debug/debug_71682680-21b6-4516-bc5e-e5129db83aaa.mp4",
     "thumbnail_path": "/Users/harsh/ATCC_Project/ai_worker/outputs/debug/debug_71682680-21b6-4516-bc5e-e5129db83aaa.thumb.jpg",
-    "worker_node": "NODE-01"
+    "worker_node": "NODE-01",
+    "band_top": null,
+    "band_bottom": null
   },
   "217a9ba4-8a9c-4f25-a38c-dfd88e07bd04": {
     "job_id": "217a9ba4-8a9c-4f25-a38c-dfd88e07bd04",
@@ -356,6 +390,80 @@
     "xlsx_path": "/Users/harsh/ATCC_Project/ai_worker/reports_output/217a9ba4-8a9c-4f25-a38c-dfd88e07bd04/report.xlsx",
     "debug_video_path": "/Users/harsh/ATCC_Project/ai_worker/outputs/debug/debug_217a9ba4-8a9c-4f25-a38c-dfd88e07bd04.mp4",
     "thumbnail_path": "/Users/harsh/ATCC_Project/ai_worker/outputs/debug/debug_217a9ba4-8a9c-4f25-a38c-dfd88e07bd04.thumb.jpg",
-    "worker_node": "NODE-01"
+    "worker_node": "NODE-01",
+    "band_top": null,
+    "band_bottom": null
+  },
+  "0e2edfba-913c-4e22-86b1-7f63b3df0379": {
+    "job_id": "0e2edfba-913c-4e22-86b1-7f63b3df0379",
+    "video_path": "C:\\Users\\Harsh Soni\\Desktop\\ATCC-Project\\ai_worker\\uploads\\0e2edfba-913c-4e22-86b1-7f63b3df0379.mp4",
+    "status": "Analyzing Frames",
+    "progress": 18,
+    "logs": [
+      "[14:59:26] INIT  \u2014 Production Mode | Model: yolov8s.pt | imgsz: 960",
+      "[14:59:26] PERF  \u2014 Frame Skipping: Process every 4th frame",
+      "[14:59:27] INFO  \u2014 Source: 1728x1080 @ 80.6fps",
+      "[14:59:32] DEBUG \u2014 Rendering active (Performance impact expected)",
+      "[15:00:31] PROC  \u2014 6% | Count: 1 | Speed: 1.7 inf/s | Latency: 589.3ms",
+      "[15:01:30] PROC  \u2014 8% | Count: 1 | Speed: 1.7 inf/s | Latency: 590.5ms",
+      "[15:02:34] PROC  \u2014 10% | Count: 1 | Speed: 1.6 inf/s | Latency: 606.9ms",
+      "[15:03:36] PROC  \u2014 12% | Count: 1 | Speed: 1.6 inf/s | Latency: 608.6ms",
+      "[15:04:41] PROC  \u2014 14% | Count: 2 | Speed: 1.6 inf/s | Latency: 617.6ms",
+      "[15:06:00] PROC  \u2014 16% | Count: 4 | Speed: 1.5 inf/s | Latency: 646.2ms",
+      "[15:07:20] PROC  \u2014 18% | Count: 7 | Speed: 1.5 inf/s | Latency: 668.3ms"
+    ],
+    "error": null,
+    "started_at": "2026-06-12T14:59:26.666949",
+    "completed_at": null,
+    "report_path": null,
+    "pdf_path": null,
+    "xlsx_path": null,
+    "debug_video_path": "C:\\Users\\Harsh Soni\\Desktop\\ATCC-Project\\ai_worker\\outputs\\debug\\debug_0e2edfba-913c-4e22-86b1-7f63b3df0379.mp4",
+    "thumbnail_path": "C:\\Users\\Harsh Soni\\Desktop\\ATCC-Project\\ai_worker\\outputs\\debug\\debug_0e2edfba-913c-4e22-86b1-7f63b3df0379.thumb.jpg",
+    "worker_node": "NODE-01",
+    "band_top": 0.45,
+    "band_bottom": 0.68
+  },
+  "d149e65f-a3d1-4d77-8de5-6039646616dc": {
+    "job_id": "d149e65f-a3d1-4d77-8de5-6039646616dc",
+    "video_path": "C:\\Users\\Harsh Soni\\Desktop\\ATCC-Project\\ai_worker\\uploads\\d149e65f-a3d1-4d77-8de5-6039646616dc.mp4",
+    "status": "Completed",
+    "progress": 100,
+    "logs": [
+      "[15:52:42] INIT  \u2014 Production Mode | Model: yolov8n.pt | imgsz: 640",
+      "[15:52:42] PERF  \u2014 Frame Skipping: Process every 6th frame",
+      "[15:52:45] INFO  \u2014 Source: 1728x1080 @ 80.6fps",
+      "[15:52:53] PERF  \u2014 Debug rendering disabled (Max throughput)",
+      "[15:53:20] PROC  \u2014 10% | Count: 1 | Speed: 7.4 inf/s | Latency: 135.3ms",
+      "[15:53:46] PROC  \u2014 16% | Count: 3 | Speed: 7.6 inf/s | Latency: 130.9ms",
+      "[15:54:10] PROC  \u2014 22% | Count: 6 | Speed: 7.8 inf/s | Latency: 127.5ms",
+      "[15:54:28] PROC  \u2014 28% | Count: 6 | Speed: 8.5 inf/s | Latency: 117.7ms",
+      "[15:54:44] PROC  \u2014 33% | Count: 6 | Speed: 9.1 inf/s | Latency: 110.4ms",
+      "[15:55:00] PROC  \u2014 39% | Count: 8 | Speed: 9.5 inf/s | Latency: 105.5ms",
+      "[15:55:14] PROC  \u2014 45% | Count: 8 | Speed: 10.0 inf/s | Latency: 100.4ms",
+      "[15:55:30] PROC  \u2014 51% | Count: 10 | Speed: 10.2 inf/s | Latency: 97.6ms",
+      "[15:55:44] PROC  \u2014 57% | Count: 11 | Speed: 10.5 inf/s | Latency: 95.0ms",
+      "[15:56:02] PROC  \u2014 62% | Count: 12 | Speed: 10.6 inf/s | Latency: 94.6ms",
+      "[15:56:19] PROC  \u2014 68% | Count: 13 | Speed: 10.7 inf/s | Latency: 93.3ms",
+      "[15:56:34] PROC  \u2014 74% | Count: 14 | Speed: 10.9 inf/s | Latency: 91.8ms",
+      "[15:56:49] PROC  \u2014 80% | Count: 16 | Speed: 11.0 inf/s | Latency: 90.6ms",
+      "[15:57:05] PROC  \u2014 85% | Count: 16 | Speed: 11.1 inf/s | Latency: 90.0ms",
+      "[15:57:21] PROC  \u2014 91% | Count: 18 | Speed: 11.2 inf/s | Latency: 89.1ms",
+      "[15:57:31] PERF  \u2014 Finalized 3113 inferences in 277.2s",
+      "[15:57:31] PERF  \u2014 Effective Processing Speed: 67.4 source_fps",
+      "[15:57:31] REPT  \u2014 Generating multi-format professional reports (PDF, XLSX, JSON)",
+      "[15:57:31] DONE  \u2014 Vehicles: 19 | Result saved."
+    ],
+    "error": null,
+    "started_at": "2026-06-12T15:52:42.822468",
+    "completed_at": "2026-06-12T15:57:31.166518",
+    "report_path": "C:\\Users\\Harsh Soni\\Desktop\\ATCC-Project\\ai_worker\\reports_output\\d149e65f-a3d1-4d77-8de5-6039646616dc\\report.json",
+    "pdf_path": "C:\\Users\\Harsh Soni\\Desktop\\ATCC-Project\\ai_worker\\reports_output\\d149e65f-a3d1-4d77-8de5-6039646616dc\\report.pdf",
+    "xlsx_path": "C:\\Users\\Harsh Soni\\Desktop\\ATCC-Project\\ai_worker\\reports_output\\d149e65f-a3d1-4d77-8de5-6039646616dc\\report.xlsx",
+    "debug_video_path": null,
+    "thumbnail_path": null,
+    "worker_node": "NODE-01",
+    "band_top": 0.45,
+    "band_bottom": 0.68
   }
 }

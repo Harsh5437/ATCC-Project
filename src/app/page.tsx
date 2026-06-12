@@ -1,3 +1,5 @@
+'use client';
+
 import { KpiCards } from '@/components/dashboard/kpi-cards';
 import { TrafficVolumeChart } from '@/components/dashboard/traffic-volume-chart';
 import { VehicleDistributionChart } from '@/components/dashboard/vehicle-distribution-chart';
